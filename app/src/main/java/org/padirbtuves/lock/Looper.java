@@ -1,4 +1,6 @@
-package ioio.examples.hello;
+package org.padirbtuves.lock;
+
+import org.padirbtuves.lock.MainActivity;
 
 import ioio.lib.api.DigitalOutput;
 import ioio.lib.api.IOIO;

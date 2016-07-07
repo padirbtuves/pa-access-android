@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ioio.examples.hello;
+package org.padirbtuves.lock;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -23,11 +23,7 @@ public class AuthResult {
 	public AuthResult(String tagId, Date validTill) {
 		this.tagId = tagId;
 		this.validTill = validTill;
-		if (validTill != null) {
-			this.valid = new Date().before(validTill);
-		} else {
-			this.valid = false;
-		}
+		this.valid = validTill != null && new Date().before(validTill);
 	}
 	
 	@Override
